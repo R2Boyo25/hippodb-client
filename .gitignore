@@ -1,0 +1,7 @@
+venv
+.venv
+poetry.lock
+__pycache__
+*.py[coa]
+.mypy_cache
+.vscode
