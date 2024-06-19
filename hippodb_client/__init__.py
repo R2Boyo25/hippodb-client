@@ -176,7 +176,7 @@ class AuthenticatedHippo(Hippo):
     async def update_document(
         self, database_path: str, name: str, contents: dict[str, Json] | list[Json]
     ) -> None:
-        async with self.session.get(
+        async with self.session.put(
             self.url.joinpath(
                 "api/"
                 + self._encode_path_segment(database_path)
